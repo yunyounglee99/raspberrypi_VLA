@@ -22,7 +22,7 @@ class OpenVLADataset(Dataset):
   def __len__(self):
     return len(self.keys)
   
-  """load data part는 필요할까 싶긴함"""
+  """load data part는 필요할까 싶긴함(아닐수도)"""
   def load_image(self, image_path):
     image = Image.open(image_path).convert("RGB")
     return self.transform(image)
