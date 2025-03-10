@@ -1,0 +1,6 @@
+rank: 32
+lora_alpha: 16
+traget_modul: ['q_proj', 'v_proj']
+lora_dropout: 0.05
+bias: 'none'
+task_type: 'SEQ_2_SEQ_LM'
