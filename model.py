@@ -16,3 +16,5 @@ lora_config = LoraConfig(
 )
 
 model = get_peft_model(model, lora_config)
+
+model.print_trainable_parameters()
